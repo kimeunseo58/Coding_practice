@@ -3,14 +3,14 @@
 #include<cmath>
 #include<iomanip>
 using namespace std;
-double getLen(int a, int b) {
+double getLen(int a, int b) {//double 형이어야함.
 	double p = sqrt(a * a + b * b);
 	return p;
 }
-bool isLine1(int a1, int b1, int a2, int b2, int a3, int b3) {
+bool isLine1(int a1, int b1, int a2, int b2, int a3, int b3) {	//기울기 비교 함수1
 	return abs(a1 - a2) * abs(b2 - b3) == abs(b1 - b2) * abs(a2 - a3);
 }
-bool isLine2(int a1, int b1, int a2, int b2, int a3, int b3) {
+bool isLine2(int a1, int b1, int a2, int b2, int a3, int b3) {	//기울기 비교 함수2
 	return abs(a1 - a2) * abs(b1 - b3) == abs(b2 - b1) * abs(a3 - a1);
 }
 int main()
